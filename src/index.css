@@ -8,6 +8,7 @@ body {
   background: url(/public/images/landingpage.png);
   background-size: cover;
   background-repeat: no-repeat;
+  color: aliceblue;
 }
 
 code {
