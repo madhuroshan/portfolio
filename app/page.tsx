@@ -1,9 +1,10 @@
-import Navbar from "@/components/Navbar";
+import Intro from "@/components/Intro";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      <Intro />
+      <div className="flex max-md:flex-col"></div>
     </div>
   );
 }
