@@ -1,33 +1,36 @@
 import { GitHubLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
-import { LinkedinIcon } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { Button } from "./ui/button";
 
 const Intro = () => {
   return (
-    <div className="flex flex-col max-w-[1024px] p-4 mx-auto mt-4">
-      <h1 className="text-3xl font-bold ">Madhu Roshan</h1>
-      <div className="flex max-sm:flex-col gap-2 items-start justify-between">
-        <div>
-          <p className="text-gray-500">Full Stack Web Developer</p>
-          <p className="text-sm text-gray-500">
-            I develop web applications using modern technologies and best
-            practices.
-          </p>
-        </div>
-        <div className="flex gap-3">
+    <section className="space-y-4 text-center">
+      <h1 className="text-4xl font-bold">Madhu Roshan</h1>
+      <p className="text-xl text-gray-600">Full-Stack Developer</p>
+      <div className="flex justify-center space-x-4">
+        <Button variant="outline" size="icon">
+          <Link href="https://github.com/madhuroshan">
+            <GitHubLogoIcon className="h-4 w-4" />
+          </Link>
+        </Button>
+        <Button variant="outline" size="icon">
           <Link href={"https://www.linkedin.com/in/madhuroshan"}>
-            <LinkedinIcon className="size-6" />
+            <Linkedin className="h-4 w-4" />
           </Link>
-          <Link href={"https://github.com/madhuroshan"}>
-            <GitHubLogoIcon className="size-6" />
-          </Link>
+        </Button>
+        <Button variant="outline" size="icon">
           <Link href={"https://x.com/madhuroshann"}>
-            <TwitterLogoIcon className="size-6" />
+            <TwitterLogoIcon className="h-4 w-4" />
           </Link>
-        </div>
+        </Button>
       </div>
-    </div>
+      <p className="max-w-lg mx-auto text-gray-600">
+        I create efficient, user-friendly web applications, focusing on clean
+        code and intuitive design.
+      </p>
+    </section>
   );
 };
 

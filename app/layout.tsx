@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Radio_Canada } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Radio_Canada({ subsets: ["latin"], weight: ["400"] });
+const inter = Inter({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
