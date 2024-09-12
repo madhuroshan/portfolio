@@ -11,7 +11,6 @@ export default function Home() {
       <div className="mt-12 p-2 max-W-[75%] mx-auto">
         <Skills />
       </div>
-      // Add this code snippet``
       <div className="mt-12 p-2 max-W-[75%] mx-auto">
         <Projects />
       </div>
